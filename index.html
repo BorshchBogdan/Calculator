@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MyCalculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            border: 2px solid red;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: gray;
+        }
+
+        .result {
+            height: 40px;
+            background: #ffff;
+        }
+
+        .buttons {
+            height: 85%;
+            display: none;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .power {
+            margin-top: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .buttons input {
+            width: 130px;
+            margin: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <div class=result></div>
+        <div class="power">
+            <input type="button" value="On" class=" on btn btn-success">
+            <input type="button" value="Off" class=" off btn-danger">
+
+        </div>
+        <div class="buttons">
+            <input type="button" value="1" class="btn btn-lg ">
+            <input type="button" value="2" class="btn btn-lg ">
+            <input type="button" value="3" class="btn btn-lg ">
+            <input type="button" value="4" class="btn btn-lg ">
+            <input type="button" value="5" class="btn btn-lg ">
+            <input type="button" value="6" class="btn btn-lg ">
+            <input type="button" value="7" class="btn btn-lg ">
+            <input type="button" value="8" class="btn btn-lg ">
+            <input type="button" value="9" class="btn btn-lg ">
+            <input type="button" value="0" class="btn btn-lg ">
+            <button style="width:130px;margin:10px" class="score btn btn-lg">=</button>
+            <input type="button" value="+" class="btn btn-lg">
+            <input type="button" value="-" class="btn btn-lg">
+            <input type="button" value="*" class="btn btn-lg">
+            <input type="button" value="/" class="btn btn-lg">
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
